@@ -87,7 +87,11 @@ TextToSpeechGeneration textToSpeechGeneration = TextToSpeechGeneration
   .build();
 
 from("direct:text-to-speech-generation")
-  .to("openai:text-to-speech:tts-1?apiKey={{openai.apikey}});
+  .to("openai:text-to-speech:tts-1?apiKey={{openai.apikey}})
+  .process(exchange -> {
+    FileOutputStream fileOutputStream = new FileOutputStream("textToSpeech.mp3");
+    fileOutputStream.write(exchange.getIn().getBody(byte[].class));
+  });
 ```
 
 ### With Raw Payload
