@@ -89,6 +89,7 @@ TextToSpeechGeneration textToSpeechGeneration = TextToSpeechGeneration
 from("direct:text-to-speech-generation")
   .to("openai:text-to-speech:tts-1?apiKey={{openai.apikey}})
   .process(exchange -> {
+    //Text to speech response is writing directly to exchange body as byte array.
     FileOutputStream fileOutputStream = new FileOutputStream("textToSpeech.mp3");
     fileOutputStream.write(exchange.getIn().getBody(byte[].class));
   });
