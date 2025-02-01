@@ -1,10 +1,10 @@
 package io.rsg.camel.openai;
 
-import io.rsg.camel.openai.capability.imageGeneration.ImageGeneration;
-import io.rsg.camel.openai.capability.textGeneration.TextGeneration;
-import io.rsg.camel.openai.capability.textGeneration.TextGenerationMessage;
-import io.rsg.camel.openai.capability.textGeneration.TextGenerationResponse;
-import io.rsg.camel.openai.capability.textToSpeech.TextToSpeechGeneration;
+import io.rsg.camel.openai.model.imageGeneration.ImageGeneration;
+import io.rsg.camel.openai.model.textGeneration.TextGeneration;
+import io.rsg.camel.openai.model.textGeneration.TextGenerationMessage;
+import io.rsg.camel.openai.model.textGeneration.TextGenerationResponse;
+import io.rsg.camel.openai.model.textToSpeech.TextToSpeechGeneration;
 import org.apache.camel.RoutesBuilder;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.test.junit4.CamelTestSupport;

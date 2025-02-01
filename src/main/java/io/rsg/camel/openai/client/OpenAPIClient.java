@@ -3,8 +3,8 @@ package io.rsg.camel.openai.client;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import io.rsg.camel.openai.OpenAIEndpoint;
-import io.rsg.camel.openai.capability.imageGeneration.ImageGenerationResponse;
-import io.rsg.camel.openai.capability.textGeneration.TextGenerationResponse;
+import io.rsg.camel.openai.model.imageGeneration.ImageGenerationResponse;
+import io.rsg.camel.openai.model.textGeneration.TextGenerationResponse;
 
 import java.io.IOException;
 import java.io.InputStream;

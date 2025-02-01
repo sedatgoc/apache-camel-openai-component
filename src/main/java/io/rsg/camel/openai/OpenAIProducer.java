@@ -1,11 +1,11 @@
 package io.rsg.camel.openai;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import io.rsg.camel.openai.capability.imageGeneration.ImageGeneration;
-import io.rsg.camel.openai.capability.imageGeneration.ImageGenerationResponse;
-import io.rsg.camel.openai.capability.textGeneration.TextGeneration;
-import io.rsg.camel.openai.capability.textGeneration.TextGenerationResponse;
-import io.rsg.camel.openai.capability.textToSpeech.TextToSpeechGeneration;
+import io.rsg.camel.openai.model.imageGeneration.ImageGeneration;
+import io.rsg.camel.openai.model.imageGeneration.ImageGenerationResponse;
+import io.rsg.camel.openai.model.textGeneration.TextGeneration;
+import io.rsg.camel.openai.model.textGeneration.TextGenerationResponse;
+import io.rsg.camel.openai.model.textToSpeech.TextToSpeechGeneration;
 import io.rsg.camel.openai.client.OpenAPIClient;
 import org.apache.camel.Exchange;
 import org.apache.camel.support.DefaultProducer;
