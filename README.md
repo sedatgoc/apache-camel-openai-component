@@ -1,4 +1,4 @@
-# OpenAI Apache Camel Component
+# Apache Camel OpenAI Component
 
 ## Overview
 This Apache Camel component provides seamless integration with OpenAI's APIs for text generation, image generation, and text-to-speech functionalities. It supports various OpenAI models and allows easy interaction within Camel routes.
